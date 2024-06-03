@@ -1,93 +1,144 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de HQ's e Mangás</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <header>
-        <div class="top-bar">
-            <div class="container">
-                <div class="logo">Loja de HQ's e Mangás</div>
-                <div class="search-bar">
-                    <input type="text" placeholder="O que você procura?">
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-                <div class="user-actions">
-                    <a href="#"><i class="fas fa-user"></i> Minha Conta</a>
-                    <a href="#"><i class="fas fa-shopping-cart"></i> Carrinho</a>
-                </div>
-            </div>
-        </div>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li><a href="#">Super-Heróis</a></li>
-                    <li><a href="#">Mangás</a></li>
-                    <li><a href="#">Infanto-Juvenis</a></li>
-                    <li><a href="#">Raridades</a></li>
-                    <li><a href="#">Importados</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
 
-    <section id="carrossel">
-        <div class="slides">
-            <img src="imagem1.jpg" alt="Imagem 1">
-            <img src="imagem2.jpg" alt="Imagem 2">
-            <img src="imagem3.jpg" alt="Imagem 3">
-        </div>
-    </section>
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
 
-    <section id="produtos">
-        <div class="container">
-            <h2>Especiais Capa Dura e Softcover</h2>
-            <div class="produto">
-                <img src="hq1.jpg" alt="HQ 1">
-                <h3>Crise de Identidade</h3>
-                <p>R$ 250,00</p>
-                <div class="estrelas">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <button onclick="comprar()">Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="hq2.jpg" alt="HQ 2">
-                <h3>Lanterna Verde - Renascimento</h3>
-                <p>R$ 200,00</p>
-                <div class="estrelas">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <button onclick="comprar()">Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="hq3.jpg" alt="HQ 3">
-                <h3>Batman - Preto e Branco</h3>
-                <p>R$ 190,00</p>
-                <div class="estrelas">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <button onclick="comprar()">Comprar</button>
-            </div>
-        </div>
-    </section>
+.top-bar {
+    background-color: #ffe600;
+    padding: 10px 0;
+}
 
-    <script src="scripts.js"></script>
-</body>
-</html>
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search-bar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.user-actions {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+}
+
+.user-actions a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 0;
+    display: block;
+}
+
+#carrossel {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 10s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 300px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+#produtos {
+    padding: 20px 0;
+}
+
+#produtos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.produto {
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 16px;
+    color: #28a745;
