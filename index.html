@@ -9,66 +9,82 @@
 </head>
 <body>
     <header>
-        <div class="logo">Loja de HQ's e Mangás</div>
+        <div class="top-bar">
+            <div class="container">
+                <div class="logo">Loja de HQ's e Mangás</div>
+                <div class="search-bar">
+                    <input type="text" placeholder="O que você procura?">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="user-actions">
+                    <a href="#"><i class="fas fa-user"></i> Minha Conta</a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i> Carrinho</a>
+                </div>
+            </div>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#">Super-Heróis</a></li>
-                <li><a href="#">Mangás</a></li>
-                <li><a href="#">Infanto-Juvenis</a></li>
-                <li><a href="#">Raridades</a></li>
-                <li><a href="#">Importados</a></li>
-            </ul>
+            <div class="container">
+                <ul>
+                    <li><a href="#">Super-Heróis</a></li>
+                    <li><a href="#">Mangás</a></li>
+                    <li><a href="#">Infanto-Juvenis</a></li>
+                    <li><a href="#">Raridades</a></li>
+                    <li><a href="#">Importados</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <section id="carrossel">
         <div class="slides">
-            <img src="crise de identidade.jpg" alt="Imagem 1">
-            <img src="Lanterna Verde - Renascimento.jpeg" alt="Imagem 2">
-            <img src="Batman - Preto e Branco.jpg" alt="Imagem 3">
+            <img src="imagem1.jpg" alt="Imagem 1">
+            <img src="imagem2.jpg" alt="Imagem 2">
+            <img src="imagem3.jpg" alt="Imagem 3">
         </div>
     </section>
 
     <section id="produtos">
-        <h2>Especiais Capa Dura e Softcover</h2>
-        <div class="produto">
-            <img src="crise de identidade.jpg" alt="HQ 1">
-            <h3>Crise de Identidade</h3>
-            <p>R$ 250,00</p>
-            <div class="estrelas">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
+        <div class="container">
+            <h2>Especiais Capa Dura e Softcover</h2>
+            <div class="produto">
+                <img src="hq1.jpg" alt="HQ 1">
+                <h3>Crise de Identidade</h3>
+                <p>R$ 250,00</p>
+                <div class="estrelas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button onclick="comprar()">Comprar</button>
             </div>
-            <button onclick="comprar()">Comprar</button>
-        </div>
-        <div class="produto">
-            <img src="Lanterna Verde - Renascimento.jpeg" alt="HQ 2">
-            <h3>Lanterna Verde - Renascimento</h3>
-            <p>R$ 200,00</p>
-            <div class="estrelas">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                <i class="far fa-star"></i>
+            <div class="produto">
+                <img src="hq2.jpg" alt="HQ 2">
+                <h3>Lanterna Verde - Renascimento</h3>
+                <p>R$ 200,00</p>
+                <div class="estrelas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button onclick="comprar()">Comprar</button>
             </div>
-            <button onclick="comprar()">Comprar</button>
-        </div>
-        <div class="produto">
-            <img src="Batman - Preto e Branco.jpg" alt="HQ 3">
-            <h3>Batman - Preto e Branco</h3>
-            <p>R$ 190,00</p>
-            <div class="estrelas">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+            <div class="produto">
+                <img src="hq3.jpg" alt="HQ 3">
+                <h3>Batman - Preto e Branco</h3>
+                <p>R$ 190,00</p>
+                <div class="estrelas">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <button onclick="comprar()">Comprar</button>
             </div>
-            <button onclick="comprar()">Comprar</button>
         </div>
     </section>
 
