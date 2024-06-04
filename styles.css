@@ -2,72 +2,27 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+header {
     background-color: #f8f9fa;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.top-bar {
-    background-color: #ffe600;
-    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.search-bar {
-    display: inline-block;
-    vertical-align: middle;
-    width: 60%;
-}
-
-.search-bar input {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.search-bar button {
-    padding: 10px;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.user-actions {
-    display: inline-block;
-    vertical-align: middle;
-    float: right;
-}
-
-.user-actions a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-nav {
-    background-color: #333;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -76,10 +31,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #333;
     font-weight: bold;
-    padding: 15px 0;
-    display: block;
 }
 
 #carrossel {
@@ -109,7 +62,7 @@ nav ul li a {
 }
 
 #produtos {
-    padding: 20px 0;
+    padding: 20px;
 }
 
 #produtos h2 {
@@ -121,12 +74,11 @@ nav ul li a {
     text-align: center;
     margin: 20px;
     display: inline-block;
-    width: 30%;
+    width: 200px;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: white;
 }
 
 .produto img {
@@ -142,3 +94,28 @@ nav ul li a {
 .produto p {
     font-size: 16px;
     color: #28a745;
+    margin: 5px 0;
+}
+
+.estrelas {
+    margin: 10px 0;
+}
+
+.estrelas i {
+    color: #ffd700;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
